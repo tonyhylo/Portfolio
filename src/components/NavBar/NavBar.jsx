@@ -1,11 +1,13 @@
+import { useState, useEffect } from "react";
+
 export default function NavBar() {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand bg-body-tertiary fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#home">
           Tony Lo
         </a>
-        <button
+        {/* <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -15,19 +17,19 @@ export default function NavBar() {
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="#about">
+          <div class="navbar-nav nav-fill ms-auto">
+            <a class="nav-link mx-3" href="#about">
               About
             </a>
-            <a class="nav-link" href="#resume">
+            <a class="nav-link mx-3" href="#resume">
               Resume
             </a>
-            <a class="nav-link" href="#portfolio">
+            <a class="nav-link mx-3" href="#portfolio">
               Portfolio
             </a>
-            <a class="nav-link" href="#contact">
+            <a class="nav-link mx-3" href="#contact">
               Contact
             </a>
           </div>

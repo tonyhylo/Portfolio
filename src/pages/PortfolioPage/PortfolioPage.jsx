@@ -5,7 +5,7 @@ import "./PortfolioPage.css";
 export default function PortfolioPage() {
   return (
     <>
-      <main>
+      <main id="home">
         <h1>Welcome to my portfolio!</h1>
         <div>
           My name is Tony Lo, and I'm excited to have you here. While I'm
@@ -16,12 +16,12 @@ export default function PortfolioPage() {
           Just click on the links below to visit my profiles and let's connect!"
         </div>
         <div>
-          <a href="https://www.linkedin.com/in/tonyhongyaulo/" target="_blank">
+          <a href="https://www.linkedin.com/in/tonyhongyaulo/" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
         </div>
         <div>
-          <a target="_blank" href="https://github.com/tonyhylo">
+          <a target="_blank" href="https://github.com/tonyhylo" rel="noopener noreferrer">
             Github
           </a>
         </div>
