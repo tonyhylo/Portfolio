@@ -30,9 +30,36 @@
 }
 
 .ring.hovered {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
   border-width: 3px;
-  border-color: lightgray;
+  border-color: orange;
   z-index: 9999;
+}
+
+.dot.hovered {
+  background-color: red;
+  border-radius: 30%;
+}
+
+.dot.clicked {
+  background-color: orange;
+  border-radius: 30%;
+}
+
+.ring.clicked {
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  border-width: 3px;
+  border-color: red;
+  z-index: 9999;
+
+}
+
+@media only screen and (max-width: 700px) {
+  .ring, .dot {
+    opacity: 0;
+  }
 }

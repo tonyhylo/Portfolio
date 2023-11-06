@@ -11,15 +11,6 @@ export default function App() {
   return (
     <main className="App">
       <Cursor />
-      <div className="container">
-        <div
-          onMouseEnter={() => cursorChangeHandler("hovered")}
-          onMouseLeave={() => cursorChangeHandler("")}
-        >
-          <h1>Hover over me</h1>
-        </div>
-      </div>
-      <div className="container" style={{ background: "peachpuff" }}></div>
       <NavBar />
       <PortfolioPage />
     </main>

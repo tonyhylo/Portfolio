@@ -1,10 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { MouseContext } from "../../context/mouse-context";
 
 export default function NavBar() {
+  const { cursorType, cursorChangeHandler } = useContext(MouseContext);
   return (
-    <nav class="navbar navbar-expand bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand bg-body-tertiary fixed-top shadow p-3 mb-5 bg-body-tertiary rounded">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#home">
+        <a
+          class="navbar-brand"
+          href="#home"
+          onMouseEnter={() => cursorChangeHandler("hovered")}
+          onMouseLeave={() => cursorChangeHandler("")}
+          onClick={() => cursorChangeHandler("clicked")}
+        >
           Tony Lo
         </a>
         {/* <button
@@ -19,12 +27,15 @@ export default function NavBar() {
           <span class="navbar-toggler-icon"></span>
         </button> */}
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav nav-fill ms-auto">
+          <div
+            class="navbar-nav nav-fill ms-auto"
+            onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}
+            onClick={() => cursorChangeHandler("clicked")}
+            onMouseOut={() => cursorChangeHandler("hovered")}
+          >
             <a class="nav-link mx-3" href="#about">
               About
-            </a>
-            <a class="nav-link mx-3" href="#resume">
-              Resume
             </a>
             <a class="nav-link mx-3" href="#portfolio">
               Portfolio
