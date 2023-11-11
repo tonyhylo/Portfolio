@@ -4,42 +4,51 @@ import "./PortfolioPage.css";
 import { useState, useEffect, useContext } from "react";
 import { MouseContext } from "../../context/mouse-context";
 import { useForm } from "react-hook-form";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 export default function PortfolioPage() {
   const { cursorType, cursorChangeHandler } = useContext(MouseContext);
-
-  const [contactMessage, setContactMessage] = useState({
-    name: "name",
-    email: "email@domain",
-    message: "message",
-  })
+  const [messageResult, setMessageResult] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
-    emailjs.sendForm("service_4vndmxf", "template_5eu99da", e.target, "0XBORLU5d3HUCENLn")
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-    e.target.reset()
-  };
-
-  // function handleSubmit(evt) {
-  //   evt.preventDefault();
-  //   console.log(contactMessage);
-  // }
-
-  function handleChange(evt) {
-    setContactMessage({...contactMessage, [evt.target.name]: evt.target.value })
+    emailjs
+      .sendForm(
+        "service_4vndmxf",
+        "template_5eu99da",
+        e.target,
+        "0XBORLU5d3HUCENLn"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setMessageResult("Message sent.");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   }
-
 
   return (
     <>
       <main id="home">
-        <h1>Welcome to my portfolio!</h1>
+        <section className="section-landing-page">
+          <h1 className="name-title">Tony Lo</h1>
+          <h6 className="sub-title">
+            ROBOTICS | SOFTWARE DEVELOPMENT | WEB DESIGNER
+          </h6>
+          <h7>
+            Hello! With nearly a decade of experience in mechanical engineering
+            and robotics, I am excited to showcase my multifaceted skill set. As
+            I explore opportunities at the intersection of engineering and
+            software development, delve into my diverse projects that reflect my
+            commitment to innovation and excellence in both fields. Let's
+            connect and explore the possibilities together!
+          </h7>
+        </section>
+        {/* <h1>Welcome to my portfolio!</h1>
         <div>
           My name is Tony Lo, and I'm excited to have you here. While I'm
           diligently working on putting the finishing touches on my website, you
@@ -65,71 +74,31 @@ export default function PortfolioPage() {
           >
             Github
           </a>
-        </div>
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <div id="about">
+        </div> */}
+        <section id="about">
           <h1>About</h1>
-        </div>
+          <p>
+            As a seasoned professional with almost a decade of experience in
+            mechanical engineering and robotics, my journey into the world of
+            technology is a lifelong journey. My early fascination with robotics
+            became a reality after growing a career in the manufacturing and
+            automation industry.
+          </p>
+          <p>
+            I thought I had it all, but I still wanted a career at the
+            intersection of mechanical engineering and software development.
+            From mechanical design design to programming robots, to eventually
+            software development, my growth reflects what I have been passionate
+            about since my youth. Throughout my experience I enjoy solving
+            problems that require multiple facets where I solve them with
+            software applications in tandem with my engineering background.
+          </p>
+          <p>
+            Join me on this dynamic exploration of both my realities, where
+            curiosity meets expertise, and let's shape the future together!
+          </p>
+          <a class="btn btn-primary" href="#contact" role="button">Get In Touch!</a>
+        </section>
         <hr />
         <hr />
         <hr />
@@ -285,7 +254,11 @@ export default function PortfolioPage() {
         <div id="contact"></div>
       </main>
       <div class="hidden-footer">
-        <form id="contact-form" onSubmit={handleSubmit}>
+        <form
+          id="contact-form"
+          className="position-relative"
+          onSubmit={handleSubmit}
+        >
           <div>
             <h1>Contact</h1>
           </div>
@@ -309,7 +282,6 @@ export default function PortfolioPage() {
               id="exampleFormControlInput1"
               name="from-name"
               placeholder="Your name"
-              onChange={handleChange}
               onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")}
               onClick={() => cursorChangeHandler("clicked")}
@@ -334,7 +306,6 @@ export default function PortfolioPage() {
               id="exampleFormControlInput1"
               placeholder="email@example.com"
               name="from-email"
-              onChange={handleChange}
               onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")}
               onClick={() => cursorChangeHandler("clicked")}
@@ -360,16 +331,17 @@ export default function PortfolioPage() {
               id="exampleFormControlTextarea1"
               placeholder="Hi Tony ..."
               name="from-message"
-              onChange={handleChange}
               rows="3"
               onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")}
               onClick={() => cursorChangeHandler("clicked")}
               onMouseOut={() => cursorChangeHandler("hovered")}
             ></textarea>
+            <p></p>
             <button type="submit" class="btn btn-primary">
               Submit
             </button>
+            <div>{messageResult}</div>
           </div>
         </form>
         <footer class="tl-footer">
