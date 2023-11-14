@@ -37,6 +37,9 @@ export default function NavBar() {
             <a class="nav-link mx-3" href="#about">
               About
             </a>
+            <a class="nav-link mx-3" href="#experience">
+              Experience
+            </a>
             <a class="nav-link mx-3" href="#portfolio">
               Portfolio
             </a>

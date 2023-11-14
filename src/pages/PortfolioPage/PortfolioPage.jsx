@@ -10,6 +10,16 @@ export default function PortfolioPage() {
   const { cursorType, cursorChangeHandler } = useContext(MouseContext);
   const [messageResult, setMessageResult] = useState("");
 
+  const buttonStyle = {
+    "--bs-btn-padding-y": ".25rem",
+    "--bs-btn-padding-x": ".5rem",
+    "--bs-btn-font-size": ".75rem",
+    "--bs-btn-bg": "white",
+    "--bs-btn-color": "black",
+    "--bs-btn-hover-bg": "red",
+    "--bs-btn-hover-color": "yellow",
+  };
+
   function handleSubmit(e) {
     e.preventDefault();
     emailjs
@@ -97,160 +107,204 @@ export default function PortfolioPage() {
             Join me on this dynamic exploration of both my realities, where
             curiosity meets expertise, and let's shape the future together!
           </p>
-          <a class="btn btn-primary" href="#contact" role="button">Get In Touch!</a>
+          <a class="btn btn-primary" href="#contact" role="button">
+            Get In Touch!
+          </a>
         </section>
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <div id="portfolio">
+        <section id="experience">
+          <h1>Experience</h1>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card h-100">
+                {/* <img src="..." class="card-img-top" alt="..."></img>   */}
+                <div class="card-body">
+                  <h5 class="card-title">Epson Canada</h5>
+                  <h6 class="card-subtitle">2021 - Present</h6>
+                  <p class="card-text">
+                    As a Systems Designer, I help drive business decisions in
+                    productizing industry turnkey products. I provide hands on
+                    experience in developing industrial automation applications,
+                    overseeing all system aspects including electrical,
+                    mechanical, and software. I work with shareholders and
+                    customers in collaboration to perfect the quality of my
+                    work.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                {/* <img src="..." class="card-img-top" alt="..."></img> */}
+                <div class="card-body">
+                  <h5 class="card-title">Freelance Developer</h5>
+                  <h6 class="card-subtitle">2023 - Present</h6>
+                  <p class="card-text">
+                    I work with small businesses and independent owners to bring
+                    their needs onto the online platform. From domain
+                    registration to deployment, I cover all bases. My
+                    specialties are SPA in React, and my experience includes
+                    WordPress and Wix.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                {/* <img src="..." class="card-img-top" alt="..."></img> */}
+                <div class="card-body">
+                  <h5 class="card-title">Slacan Industries</h5>
+                  <h6 class="card-subtitle">2019 - 2021</h6>
+                  <p class="card-text">
+                    As an Automation Systems Engineer, I identified processes
+                    for robotic automation. I then selected hardware/software,
+                    designed the automation cell, and integrated all aspects
+                    including electrical, mechanical, and software requirements.
+                    I have successfully commissioned cells with budgets up to
+                    $1M.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                {/* <img src="..." class="card-img-top" alt="..."></img> */}
+                <div class="card-body">
+                  <h5 class="card-title">Slacan Industries</h5>
+                  <h6 class="card-subtitle">2017 - 2019</h6>
+                  <p class="card-text">
+                    As a Junior Mechanical Engineer, I used FMEA to identify
+                    root cause to manufacturing process failures, and design
+                    failures. I used SolidWorks and AutoCAD to verify product
+                    assemblies, and new product designs. I commissioned a
+                    robotic vision system to provide first off quality checks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="portfolio">
           <h1>Portfolio</h1>
-        </div>
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <div>
-          helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-        </div>
-        <div>
-          helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-        </div>
-        <div>
-          helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-        </div>
-        <div>
-          helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-        </div>
-        <div>
-          helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-        </div>
-        <div>
-          helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-        </div>
-        <div>
-          helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-        </div>
-        <div>
-          helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-        </div>
-        <div>
-          helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-        </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card h-100">
+                {/* <img src="..." class="card-img-top" alt="..."></img> */}
+                <div class="card-body">
+                  <h5 class="card-title">PLANMYPATH</h5>
+                  <p class="card-text">
+                    PLANMYPATH is a platform where users can share travel plans
+                    with each other. It is a knowledge base for travellers can
+                    tailor their plans specific to their need. On PLANMYPATH,
+                    users can create new Paths, and find new Paths by
+                    tag/country. Upcoming features include sharing, favouriting,
+                    rating, and commenting. This is the go to place when there
+                    is a destination in mind, and you are looking for
+                    inspiration of a certified stop to add to your Path.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://github.com/tonyhylo/PlanMyPath"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-sm"
+                      style={buttonStyle}
+                      // disabled
+                    >
+                      CODE
+                    </button>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://planmypath.herokuapp.com/"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-sm"
+                      style={buttonStyle}
+                    >
+                      LIVE
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                {/* <img src="..." class="card-img-top" alt="..."></img> */}
+                <div class="card-body">
+                  <h5 class="card-title">GarageGuru</h5>
+                  <p class="card-text">
+                    GarageGuru is simply a social media web-app dedicated for
+                    automotive hobbists. A project built by enthusiastic
+                    developers who felt that users needed a dedicated platform
+                    to showcase their passion projects. GarageGuru is an app to
+                    post, share, and discover cars amongst likeminded
+                    individuals. There is no clutter, no distractions. See only
+                    the content you enjoy and want to see!
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://github.com/tonyhylo/PlanMyPath"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-sm position-absolute bottom-0 start-0"
+                      style={buttonStyle}
+                    >
+                      CODE
+                    </button>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://planmypath.herokuapp.com/"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-sm"
+                      style={buttonStyle}
+                    >
+                      LIVE
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                {/* <img src="..." class="card-img-top" alt="..."></img> */}
+                <div class="card-body">
+                  <h5 class="card-title">Baby Beeznz</h5>
+                  <p class="card-text">
+                    Baby Beeznz is a database designed for parents to keep track
+                    of their new baby. The application allows users to log
+                    feedings and dirty diapers.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                {/* <img src="..." class="card-img-top" alt="..."></img> */}
+                <div class="card-body">
+                  <h5 class="card-title">Battleship</h5>
+                  <p class="card-text">
+                    Battleship is a game against two players. This game is
+                    against the computer. You are able to move the battleships
+                    anywhere on the grid, except diagonally. Once finished, both
+                    players take turns to guess where the opponent's battleships
+                    are. The first player to successfully destroy all of their
+                    opponent's battleships is the winner.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <div id="contact"></div>
       </main>
       <div class="hidden-footer">
