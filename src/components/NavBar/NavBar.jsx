@@ -8,7 +8,7 @@ export default function NavBar() {
       <div class="container-fluid">
         <a
           class="navbar-brand"
-          href="#home"
+          href="#top"
           onMouseEnter={() => cursorChangeHandler("hovered")}
           onMouseLeave={() => cursorChangeHandler("")}
           onClick={() => cursorChangeHandler("clicked")}

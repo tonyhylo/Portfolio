@@ -14,10 +14,21 @@ export default function PortfolioPage() {
     "--bs-btn-padding-y": ".25rem",
     "--bs-btn-padding-x": ".5rem",
     "--bs-btn-font-size": ".75rem",
-    "--bs-btn-bg": "white",
-    "--bs-btn-color": "black",
-    "--bs-btn-hover-bg": "red",
-    "--bs-btn-hover-color": "yellow",
+    "--bs-btn-bg": "#6C969D",
+    "--bs-btn-border-color": "transparent",
+    "--bs-btn-color": "white",
+    "--bs-btn-hover-bg": "white",
+    "--bs-btn-hover-color": "#6C969D",
+    "--bs-btn-hover-border-color": "#6C969D"
+  };
+
+  const btnGetInTouch = {
+    "--bs-btn-bg": "#6C969D",
+    "--bs-btn-border-color": "transparent",
+    "--bs-btn-color": "white",
+    "--bs-btn-hover-bg": "white",
+    "--bs-btn-hover-color": "#6C969D",
+    "--bs-btn-hover-border-color": "#6C969D"
   };
 
   function handleSubmit(e) {
@@ -43,20 +54,21 @@ export default function PortfolioPage() {
 
   return (
     <>
-      <main id="home">
+      <main className="overflow-x-hidden" id="home">
         <section className="section-landing-page">
-          <h1 className="name-title">Tony Lo</h1>
-          <h6 className="sub-title">
-            ROBOTICS | SOFTWARE DEVELOPMENT | WEB DESIGNER
-          </h6>
-          <h7>
-            Hello! With nearly a decade of experience in mechanical engineering
-            and robotics, I am excited to showcase my multifaceted skill set. As
-            I explore opportunities at the intersection of engineering and
-            software development, delve into my diverse projects that reflect my
+          <h1 className="name-title">
+            <strong>Tony Lo</strong>
+          </h1>
+          <h4 className="sub-title">
+            ROBOTICS | SOFTWARE DEVELOPMENT | WEB DEVELOPER
+          </h4>
+          <h5>
+            <span className="hello">Hello!</span> Join me as I explore
+            opportunities at the intersection of engineering and software
+            development, delve into my diverse projects that reflect my
             commitment to innovation and excellence in both fields. Let's
             connect and explore the possibilities together!
-          </h7>
+          </h5>
         </section>
         {/* <h1>Welcome to my portfolio!</h1>
         <div>
@@ -85,37 +97,40 @@ export default function PortfolioPage() {
             Github
           </a>
         </div> */}
-        <section id="about">
-          <h1>About</h1>
-          <p>
-            As a seasoned professional with almost a decade of experience in
-            mechanical engineering and robotics, my journey into the world of
-            technology is a lifelong journey. My early fascination with robotics
-            became a reality after growing a career in the manufacturing and
-            automation industry.
-          </p>
-          <p>
-            I thought I had it all, but I still wanted a career at the
-            intersection of mechanical engineering and software development.
-            From mechanical design design to programming robots, to eventually
-            software development, my growth reflects what I have been passionate
-            about since my youth. Throughout my experience I enjoy solving
-            problems that require multiple facets where I solve them with
-            software applications in tandem with my engineering background.
-          </p>
-          <p>
-            Join me on this dynamic exploration of both my realities, where
-            curiosity meets expertise, and let's shape the future together!
-          </p>
-          <a class="btn btn-primary" href="#contact" role="button">
-            Get In Touch!
-          </a>
+        <section id="about" className="">
+          <h1 className="headings">About</h1>
+          <div className="about-text">
+            <p>
+              As a seasoned professional with almost a decade of experience in
+              mechanical engineering and robotics, my journey into the world of
+              technology is a lifelong journey. My early fascination with
+              robotics became a reality after growing a career in the
+              manufacturing and automation industry.
+            </p>
+            <p>
+              I thought I had it all, but I still wanted a career at the
+              intersection of mechanical engineering and software development.
+              From mechanical design design to programming robots, to eventually
+              software development, my growth reflects what I have been
+              passionate about since my youth. Throughout my experience I enjoy
+              solving problems that require multiple facets where I solve them
+              with software applications in tandem with my engineering
+              background.
+            </p>
+            <p>
+              Join me on this dynamic exploration of both my realities, where
+              curiosity meets expertise, and let's shape the future together!
+            </p>
+            <a className="btn btn-primary" href="#contact" role="button" style={btnGetInTouch}>
+              Get In Touch!
+            </a>
+          </div>
         </section>
         <section id="experience">
-          <h1>Experience</h1>
-          <div class="row row-cols-1 row-cols-md-2 g-4">
+          <h1 className="headings">Experience</h1>
+          <div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
             <div class="col">
-              <div class="card h-100">
+              <div class="card h-100 border-light shadow-lg p-3 mb-5 bg-body-tertiary rounded">
                 {/* <img src="..." class="card-img-top" alt="..."></img>   */}
                 <div class="card-body">
                   <h5 class="card-title">Epson Canada</h5>
@@ -133,7 +148,7 @@ export default function PortfolioPage() {
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
+              <div class="card h-100 border-light">
                 {/* <img src="..." class="card-img-top" alt="..."></img> */}
                 <div class="card-body">
                   <h5 class="card-title">Freelance Developer</h5>
@@ -148,9 +163,8 @@ export default function PortfolioPage() {
                 </div>
               </div>
             </div>
-            <div class="col">
+            {/* <div class="col">
               <div class="card h-100">
-                {/* <img src="..." class="card-img-top" alt="..."></img> */}
                 <div class="card-body">
                   <h5 class="card-title">Slacan Industries</h5>
                   <h6 class="card-subtitle">2019 - 2021</h6>
@@ -167,7 +181,6 @@ export default function PortfolioPage() {
             </div>
             <div class="col">
               <div class="card h-100">
-                {/* <img src="..." class="card-img-top" alt="..."></img> */}
                 <div class="card-body">
                   <h5 class="card-title">Slacan Industries</h5>
                   <h6 class="card-subtitle">2017 - 2019</h6>
@@ -180,7 +193,7 @@ export default function PortfolioPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
         <section id="portfolio">
@@ -208,7 +221,7 @@ export default function PortfolioPage() {
                   >
                     <button
                       type="button"
-                      class="btn btn-primary btn-sm"
+                      class="btn btn-primary btn-sm me-2"
                       style={buttonStyle}
                       // disabled
                     >
@@ -252,7 +265,7 @@ export default function PortfolioPage() {
                   >
                     <button
                       type="button"
-                      class="btn btn-primary btn-sm position-absolute bottom-0 start-0"
+                      class="btn btn-primary btn-sm mt-4 me-2"// position-absolute bottom-0 start-10 mb-3"
                       style={buttonStyle}
                     >
                       CODE
@@ -265,7 +278,7 @@ export default function PortfolioPage() {
                   >
                     <button
                       type="button"
-                      class="btn btn-primary btn-sm"
+                      class="btn btn-primary btn-sm mt-4"// position-absolute bottom-0 start-10 mb-3"
                       style={buttonStyle}
                     >
                       LIVE
@@ -284,6 +297,32 @@ export default function PortfolioPage() {
                     of their new baby. The application allows users to log
                     feedings and dirty diapers.
                   </p>
+                  <a
+                    target="_blank"
+                    href="https://github.com/tonyhylo/Baby-Beeznz"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-sm mt-5 me-2"// position-absolute bottom-0 start-10 mb-3"
+                      style={buttonStyle}
+                    >
+                      CODE
+                    </button>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://babybeeznz.herokuapp.com/"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-sm mt-5"// position-absolute bottom-0 start-10 mb-3"
+                      style={buttonStyle}
+                    >
+                      LIVE
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -300,6 +339,32 @@ export default function PortfolioPage() {
                     are. The first player to successfully destroy all of their
                     opponent's battleships is the winner.
                   </p>
+                  <a
+                    target="_blank"
+                    href="https://github.com/tonyhylo/Project-Battleship"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-sm me-2"// position-absolute bottom-0 start-10 mb-3"
+                      style={buttonStyle}
+                    >
+                      CODE
+                    </button>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://tonyhylo.github.io/Project-Battleship/"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-sm"// position-absolute bottom-0 start-10 mb-3"
+                      style={buttonStyle}
+                    >
+                      LIVE
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
