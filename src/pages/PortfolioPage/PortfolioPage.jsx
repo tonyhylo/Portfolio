@@ -19,7 +19,7 @@ export default function PortfolioPage() {
     "--bs-btn-color": "white",
     "--bs-btn-hover-bg": "white",
     "--bs-btn-hover-color": "#6C969D",
-    "--bs-btn-hover-border-color": "#6C969D"
+    "--bs-btn-hover-border-color": "#6C969D",
   };
 
   const btnGetInTouch = {
@@ -28,7 +28,7 @@ export default function PortfolioPage() {
     "--bs-btn-color": "white",
     "--bs-btn-hover-bg": "white",
     "--bs-btn-hover-color": "#6C969D",
-    "--bs-btn-hover-border-color": "#6C969D"
+    "--bs-btn-hover-border-color": "#6C969D",
   };
 
   function handleSubmit(e) {
@@ -54,7 +54,7 @@ export default function PortfolioPage() {
 
   return (
     <>
-      <main className="overflow-x-hidden" id="home">
+      <main className="overflow-x-hidden mx-5" id="home">
         <section className="section-landing-page">
           <h1 className="name-title">
             <strong>Tony Lo</strong>
@@ -121,49 +121,55 @@ export default function PortfolioPage() {
               Join me on this dynamic exploration of both my realities, where
               curiosity meets expertise, and let's shape the future together!
             </p>
-            <a className="btn btn-primary" href="#contact" role="button" style={btnGetInTouch}>
+            <a
+              className="btn btn-primary"
+              href="#contact"
+              role="button"
+              style={btnGetInTouch}
+            >
               Get In Touch!
             </a>
           </div>
         </section>
         <section id="experience">
           <h1 className="headings">Experience</h1>
-          <div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
-            <div class="col">
-              <div class="card h-100 border-light shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-                {/* <img src="..." class="card-img-top" alt="..."></img>   */}
-                <div class="card-body">
-                  <h5 class="card-title">Epson Canada</h5>
-                  <h6 class="card-subtitle">2021 - Present</h6>
-                  <p class="card-text">
-                    As a Systems Designer, I help drive business decisions in
-                    productizing industry turnkey products. I provide hands on
-                    experience in developing industrial automation applications,
-                    overseeing all system aspects including electrical,
-                    mechanical, and software. I work with shareholders and
-                    customers in collaboration to perfect the quality of my
-                    work.
-                  </p>
+          <div className="experience-body">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  {/* <img src="..." class="card-img-top" alt="..."></img>   */}
+                  <div class="card-body">
+                    <h5 class="card-title">Epson Canada</h5>
+                    <h6 class="card-subtitle">2021 - Present</h6>
+                    <p class="card-text">
+                      As a Systems Designer, I help drive business decisions in
+                      productizing industry turnkey products. I provide hands on
+                      experience in developing industrial automation
+                      applications, overseeing all system aspects including
+                      electrical, mechanical, and software. I work with
+                      shareholders and customers in collaboration to perfect the
+                      quality of my work.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 border-light">
-                {/* <img src="..." class="card-img-top" alt="..."></img> */}
-                <div class="card-body">
-                  <h5 class="card-title">Freelance Developer</h5>
-                  <h6 class="card-subtitle">2023 - Present</h6>
-                  <p class="card-text">
-                    I work with small businesses and independent owners to bring
-                    their needs onto the online platform. From domain
-                    registration to deployment, I cover all bases. My
-                    specialties are SPA in React, and my experience includes
-                    WordPress and Wix.
-                  </p>
+              <div class="col">
+                <div class="card h-100">
+                  {/* <img src="..." class="card-img-top" alt="..."></img> */}
+                  <div class="card-body">
+                    <h5 class="card-title">Freelance Developer</h5>
+                    <h6 class="card-subtitle">2023 - Present</h6>
+                    <p class="card-text">
+                      I work with small businesses and independent owners to
+                      bring their needs onto the online platform. From domain
+                      registration to deployment, I cover all bases. My
+                      specialties are SPA in React, and my experience includes
+                      WordPress and Wix.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            {/* <div class="col">
+              {/* <div class="col">
               <div class="card h-100">
                 <div class="card-body">
                   <h5 class="card-title">Slacan Industries</h5>
@@ -194,6 +200,7 @@ export default function PortfolioPage() {
                 </div>
               </div>
             </div> */}
+            </div>
           </div>
         </section>
         <section id="portfolio">
@@ -265,7 +272,7 @@ export default function PortfolioPage() {
                   >
                     <button
                       type="button"
-                      class="btn btn-primary btn-sm mt-4 me-2"// position-absolute bottom-0 start-10 mb-3"
+                      class="btn btn-primary btn-sm mt-4 me-2" // position-absolute bottom-0 start-10 mb-3"
                       style={buttonStyle}
                     >
                       CODE
@@ -278,7 +285,7 @@ export default function PortfolioPage() {
                   >
                     <button
                       type="button"
-                      class="btn btn-primary btn-sm mt-4"// position-absolute bottom-0 start-10 mb-3"
+                      class="btn btn-primary btn-sm mt-4" // position-absolute bottom-0 start-10 mb-3"
                       style={buttonStyle}
                     >
                       LIVE
@@ -304,7 +311,7 @@ export default function PortfolioPage() {
                   >
                     <button
                       type="button"
-                      class="btn btn-primary btn-sm mt-5 me-2"// position-absolute bottom-0 start-10 mb-3"
+                      class="btn btn-primary btn-sm mt-5 me-2" // position-absolute bottom-0 start-10 mb-3"
                       style={buttonStyle}
                     >
                       CODE
@@ -317,7 +324,7 @@ export default function PortfolioPage() {
                   >
                     <button
                       type="button"
-                      class="btn btn-primary btn-sm mt-5"// position-absolute bottom-0 start-10 mb-3"
+                      class="btn btn-primary btn-sm mt-5" // position-absolute bottom-0 start-10 mb-3"
                       style={buttonStyle}
                     >
                       LIVE
@@ -346,7 +353,7 @@ export default function PortfolioPage() {
                   >
                     <button
                       type="button"
-                      class="btn btn-primary btn-sm me-2"// position-absolute bottom-0 start-10 mb-3"
+                      class="btn btn-primary btn-sm me-2" // position-absolute bottom-0 start-10 mb-3"
                       style={buttonStyle}
                     >
                       CODE
@@ -359,7 +366,7 @@ export default function PortfolioPage() {
                   >
                     <button
                       type="button"
-                      class="btn btn-primary btn-sm"// position-absolute bottom-0 start-10 mb-3"
+                      class="btn btn-primary btn-sm" // position-absolute bottom-0 start-10 mb-3"
                       style={buttonStyle}
                     >
                       LIVE
@@ -375,7 +382,7 @@ export default function PortfolioPage() {
       <div class="hidden-footer">
         <form
           id="contact-form"
-          className="position-relative"
+          className="position-relative mx-5"
           onSubmit={handleSubmit}
         >
           <div>
