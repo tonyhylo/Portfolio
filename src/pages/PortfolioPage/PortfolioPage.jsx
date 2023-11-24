@@ -204,174 +204,177 @@ export default function PortfolioPage() {
           </div>
         </section>
         <section id="portfolio">
-          <h1>Portfolio</h1>
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card h-100">
-                {/* <img src="..." class="card-img-top" alt="..."></img> */}
-                <div class="card-body">
-                  <h5 class="card-title">PLANMYPATH</h5>
-                  <p class="card-text">
-                    PLANMYPATH is a platform where users can share travel plans
-                    with each other. It is a knowledge base for travellers can
-                    tailor their plans specific to their need. On PLANMYPATH,
-                    users can create new Paths, and find new Paths by
-                    tag/country. Upcoming features include sharing, favouriting,
-                    rating, and commenting. This is the go to place when there
-                    is a destination in mind, and you are looking for
-                    inspiration of a certified stop to add to your Path.
-                  </p>
-                  <a
-                    target="_blank"
-                    href="https://github.com/tonyhylo/PlanMyPath"
-                    rel="noopener noreferrer"
-                  >
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-sm me-2"
-                      style={buttonStyle}
-                      // disabled
+          <h1 className="headings">Portfolio</h1>
+          <div className="portfolio-body">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  {/* <img src="..." class="card-img-top" alt="..."></img> */}
+                  <div class="card-body">
+                    <h5 class="card-title">PLANMYPATH</h5>
+                    <p class="card-text">
+                      PLANMYPATH is a platform where users can share travel
+                      plans with each other. It is a knowledge base for
+                      travellers can tailor their plans specific to their need.
+                      On PLANMYPATH, users can create new Paths, and find new
+                      Paths by tag/country. Upcoming features include sharing,
+                      favouriting, rating, and commenting. This is the go to
+                      place when there is a destination in mind, and you are
+                      looking for inspiration of a certified stop to add to your
+                      Path.
+                    </p>
+                    <a
+                      target="_blank"
+                      href="https://github.com/tonyhylo/PlanMyPath"
+                      rel="noopener noreferrer"
                     >
-                      CODE
-                    </button>
-                  </a>
-                  <a
-                    target="_blank"
-                    href="https://planmypath.herokuapp.com/"
-                    rel="noopener noreferrer"
-                  >
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-sm"
-                      style={buttonStyle}
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-sm me-2"
+                        style={buttonStyle}
+                        // disabled
+                      >
+                        CODE
+                      </button>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://planmypath.herokuapp.com/"
+                      rel="noopener noreferrer"
                     >
-                      LIVE
-                    </button>
-                  </a>
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-sm"
+                        style={buttonStyle}
+                      >
+                        LIVE
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                {/* <img src="..." class="card-img-top" alt="..."></img> */}
-                <div class="card-body">
-                  <h5 class="card-title">GarageGuru</h5>
-                  <p class="card-text">
-                    GarageGuru is simply a social media web-app dedicated for
-                    automotive hobbists. A project built by enthusiastic
-                    developers who felt that users needed a dedicated platform
-                    to showcase their passion projects. GarageGuru is an app to
-                    post, share, and discover cars amongst likeminded
-                    individuals. There is no clutter, no distractions. See only
-                    the content you enjoy and want to see!
-                  </p>
-                  <a
-                    target="_blank"
-                    href="https://github.com/tonyhylo/PlanMyPath"
-                    rel="noopener noreferrer"
-                  >
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-sm mt-4 me-2" // position-absolute bottom-0 start-10 mb-3"
-                      style={buttonStyle}
+              <div class="col">
+                <div class="card h-100">
+                  {/* <img src="..." class="card-img-top" alt="..."></img> */}
+                  <div class="card-body">
+                    <h5 class="card-title">GarageGuru</h5>
+                    <p class="card-text">
+                      GarageGuru is simply a social media web-app dedicated for
+                      automotive hobbists. A project built by enthusiastic
+                      developers who felt that users needed a dedicated platform
+                      to showcase their passion projects. GarageGuru is an app
+                      to post, share, and discover cars amongst likeminded
+                      individuals. There is no clutter, no distractions. See
+                      only the content you enjoy and want to see!
+                    </p>
+                    <a
+                      target="_blank"
+                      href="https://github.com/tonyhylo/PlanMyPath"
+                      rel="noopener noreferrer"
                     >
-                      CODE
-                    </button>
-                  </a>
-                  <a
-                    target="_blank"
-                    href="https://planmypath.herokuapp.com/"
-                    rel="noopener noreferrer"
-                  >
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-sm mt-4" // position-absolute bottom-0 start-10 mb-3"
-                      style={buttonStyle}
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-sm mt-4 me-2" // position-absolute bottom-0 start-10 mb-3"
+                        style={buttonStyle}
+                      >
+                        CODE
+                      </button>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://planmypath.herokuapp.com/"
+                      rel="noopener noreferrer"
                     >
-                      LIVE
-                    </button>
-                  </a>
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-sm mt-4" // position-absolute bottom-0 start-10 mb-3"
+                        style={buttonStyle}
+                      >
+                        LIVE
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                {/* <img src="..." class="card-img-top" alt="..."></img> */}
-                <div class="card-body">
-                  <h5 class="card-title">Baby Beeznz</h5>
-                  <p class="card-text">
-                    Baby Beeznz is a database designed for parents to keep track
-                    of their new baby. The application allows users to log
-                    feedings and dirty diapers.
-                  </p>
-                  <a
-                    target="_blank"
-                    href="https://github.com/tonyhylo/Baby-Beeznz"
-                    rel="noopener noreferrer"
-                  >
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-sm mt-5 me-2" // position-absolute bottom-0 start-10 mb-3"
-                      style={buttonStyle}
+              <div class="col">
+                <div class="card h-100">
+                  {/* <img src="..." class="card-img-top" alt="..."></img> */}
+                  <div class="card-body">
+                    <h5 class="card-title">Baby Beeznz</h5>
+                    <p class="card-text">
+                      Baby Beeznz is a database designed for parents to keep
+                      track of their new baby. The application allows users to
+                      log feedings and dirty diapers.
+                    </p>
+                    <a
+                      target="_blank"
+                      href="https://github.com/tonyhylo/Baby-Beeznz"
+                      rel="noopener noreferrer"
                     >
-                      CODE
-                    </button>
-                  </a>
-                  <a
-                    target="_blank"
-                    href="https://babybeeznz.herokuapp.com/"
-                    rel="noopener noreferrer"
-                  >
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-sm mt-5" // position-absolute bottom-0 start-10 mb-3"
-                      style={buttonStyle}
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-sm mt-5 me-2" // position-absolute bottom-0 start-10 mb-3"
+                        style={buttonStyle}
+                      >
+                        CODE
+                      </button>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://babybeeznz.herokuapp.com/"
+                      rel="noopener noreferrer"
                     >
-                      LIVE
-                    </button>
-                  </a>
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-sm mt-5" // position-absolute bottom-0 start-10 mb-3"
+                        style={buttonStyle}
+                      >
+                        LIVE
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                {/* <img src="..." class="card-img-top" alt="..."></img> */}
-                <div class="card-body">
-                  <h5 class="card-title">Battleship</h5>
-                  <p class="card-text">
-                    Battleship is a game against two players. This game is
-                    against the computer. You are able to move the battleships
-                    anywhere on the grid, except diagonally. Once finished, both
-                    players take turns to guess where the opponent's battleships
-                    are. The first player to successfully destroy all of their
-                    opponent's battleships is the winner.
-                  </p>
-                  <a
-                    target="_blank"
-                    href="https://github.com/tonyhylo/Project-Battleship"
-                    rel="noopener noreferrer"
-                  >
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-sm me-2" // position-absolute bottom-0 start-10 mb-3"
-                      style={buttonStyle}
+              <div class="col">
+                <div class="card h-100">
+                  {/* <img src="..." class="card-img-top" alt="..."></img> */}
+                  <div class="card-body">
+                    <h5 class="card-title">Battleship</h5>
+                    <p class="card-text">
+                      Battleship is a game against two players. This game is
+                      against the computer. You are able to move the battleships
+                      anywhere on the grid, except diagonally. Once finished,
+                      both players take turns to guess where the opponent's
+                      battleships are. The first player to successfully destroy
+                      all of their opponent's battleships is the winner.
+                    </p>
+                    <a
+                      target="_blank"
+                      href="https://github.com/tonyhylo/Project-Battleship"
+                      rel="noopener noreferrer"
                     >
-                      CODE
-                    </button>
-                  </a>
-                  <a
-                    target="_blank"
-                    href="https://tonyhylo.github.io/Project-Battleship/"
-                    rel="noopener noreferrer"
-                  >
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-sm" // position-absolute bottom-0 start-10 mb-3"
-                      style={buttonStyle}
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-sm me-2" // position-absolute bottom-0 start-10 mb-3"
+                        style={buttonStyle}
+                      >
+                        CODE
+                      </button>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://tonyhylo.github.io/Project-Battleship/"
+                      rel="noopener noreferrer"
                     >
-                      LIVE
-                    </button>
-                  </a>
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-sm" // position-absolute bottom-0 start-10 mb-3"
+                        style={buttonStyle}
+                      >
+                        LIVE
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
