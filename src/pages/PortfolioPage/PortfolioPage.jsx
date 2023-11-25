@@ -31,6 +31,15 @@ export default function PortfolioPage() {
     "--bs-btn-hover-border-color": "#6C969D",
   };
 
+  const btnSubmit = {
+    "--bs-btn-bg": "#6C969D",
+    "--bs-btn-border-color": "transparent",
+    "--bs-btn-color": "white",
+    "--bs-btn-hover-bg": "white",
+    "--bs-btn-hover-color": "#6C969D",
+    "--bs-btn-hover-border-color": "#6C969D",
+  };
+
   function handleSubmit(e) {
     e.preventDefault();
     emailjs
@@ -54,7 +63,7 @@ export default function PortfolioPage() {
 
   return (
     <>
-      <main className="overflow-x-hidden mx-5" id="home">
+      <main className="overflow-x-hidden px-5" id="home">
         <section className="section-landing-page">
           <h1 className="name-title">
             <strong>Tony Lo</strong>
@@ -99,7 +108,7 @@ export default function PortfolioPage() {
         </div> */}
         <section id="about" className="">
           <h1 className="headings">About</h1>
-          <div className="about-text">
+          <div className="about-text fs-5">
             <p>
               As a seasoned professional with almost a decade of experience in
               mechanical engineering and robotics, my journey into the world of
@@ -383,14 +392,12 @@ export default function PortfolioPage() {
         <div id="contact"></div>
       </main>
       <div class="hidden-footer">
+            <h1 className="contact-heading">Contact</h1>
         <form
           id="contact-form"
-          className="position-relative mx-5"
+          className="mx-5"
           onSubmit={handleSubmit}
         >
-          <div>
-            <h1>Contact</h1>
-          </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">
               <svg
