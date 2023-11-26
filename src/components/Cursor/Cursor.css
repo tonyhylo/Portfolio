@@ -1,4 +1,4 @@
-.ring {
+/* .ring {
   position: fixed;
   top: 0;
   left: 0;
@@ -14,19 +14,24 @@
   will-change: width, height, transform, border;
   z-index: 9999;
   pointer-events: none;
+} */
+
+* {
+  cursor: none;
 }
 
 .dot {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 8px;
-  height: 8px;
-  background-color: white;
+  width: 15px;
+  height: 15px;
+  background-color: #817f75;
   border-radius: 100%;
   transform: translate(-50%, -50%);
   z-index: 9999;
   pointer-events: none;
+  cursor: none;
 }
 
 .ring.hovered {
@@ -41,6 +46,8 @@
 .dot.hovered {
   background-color: red;
   border-radius: 30%;
+  cursor: none;
+  pointer-events: none;
 }
 
 .dot.clicked {

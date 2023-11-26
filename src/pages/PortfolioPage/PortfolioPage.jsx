@@ -31,15 +31,6 @@ export default function PortfolioPage() {
     "--bs-btn-hover-border-color": "#6C969D",
   };
 
-  const btnSubmit = {
-    "--bs-btn-bg": "#6C969D",
-    "--bs-btn-border-color": "transparent",
-    "--bs-btn-color": "white",
-    "--bs-btn-hover-bg": "white",
-    "--bs-btn-hover-color": "#6C969D",
-    "--bs-btn-hover-border-color": "#6C969D",
-  };
-
   function handleSubmit(e) {
     e.preventDefault();
     emailjs
@@ -133,8 +124,13 @@ export default function PortfolioPage() {
             <a
               className="btn btn-primary"
               href="#contact"
-              role="button"
+              role="link"
               style={btnGetInTouch}
+              id="btn-get-in-touch"
+              onMouseEnter={() => cursorChangeHandler("hovered")}
+              onMouseLeave={() => cursorChangeHandler("")}
+              onClick={() => cursorChangeHandler("clicked")}
+              onMouseOut={() => cursorChangeHandler("hovered")}
             >
               Get In Touch!
             </a>
@@ -171,7 +167,7 @@ export default function PortfolioPage() {
                     <p class="card-text">
                       I work with small businesses and independent owners to
                       bring their needs onto the online platform. From domain
-                      registration to deployment, I cover all bases. My
+                      registration to deployment, I cover all the bases. My
                       specialties are SPA in React, and my experience includes
                       WordPress and Wix.
                     </p>
@@ -236,6 +232,10 @@ export default function PortfolioPage() {
                       target="_blank"
                       href="https://github.com/tonyhylo/PlanMyPath"
                       rel="noopener noreferrer"
+                      onMouseEnter={() => cursorChangeHandler("hovered")}
+                      onMouseLeave={() => cursorChangeHandler("")}
+                      onClick={() => cursorChangeHandler("clicked")}
+                      onMouseOut={() => cursorChangeHandler("hovered")}
                     >
                       <button
                         type="button"
@@ -247,14 +247,20 @@ export default function PortfolioPage() {
                       </button>
                     </a>
                     <a
-                      target="_blank"
-                      href="https://planmypath.herokuapp.com/"
-                      rel="noopener noreferrer"
+                      // target="_blank"
+                      // href="https://planmypath.herokuapp.com/"
+                      // rel="noopener noreferrer"
+                      // onMouseEnter={() => cursorChangeHandler("hovered")}
+                      // onMouseLeave={() => cursorChangeHandler("")}
+                      // onClick={() => cursorChangeHandler("clicked")}
+                      // onMouseOut={() => cursorChangeHandler("hovered")}
+                      aria-disabled="true"
                     >
                       <button
                         type="button"
                         class="btn btn-primary btn-sm"
                         style={buttonStyle}
+                        disabled
                       >
                         LIVE
                       </button>
@@ -280,6 +286,10 @@ export default function PortfolioPage() {
                       target="_blank"
                       href="https://github.com/tonyhylo/PlanMyPath"
                       rel="noopener noreferrer"
+                      onMouseEnter={() => cursorChangeHandler("hovered")}
+                      onMouseLeave={() => cursorChangeHandler("")}
+                      onClick={() => cursorChangeHandler("clicked")}
+                      onMouseOut={() => cursorChangeHandler("hovered")}
                     >
                       <button
                         type="button"
@@ -290,14 +300,20 @@ export default function PortfolioPage() {
                       </button>
                     </a>
                     <a
-                      target="_blank"
-                      href="https://planmypath.herokuapp.com/"
-                      rel="noopener noreferrer"
+                      // target="_blank"
+                      // href="https://planmypath.herokuapp.com/"
+                      // rel="noopener noreferrer"
+                      // onMouseEnter={() => cursorChangeHandler("hovered")}
+                      // onMouseLeave={() => cursorChangeHandler("")}
+                      // onClick={() => cursorChangeHandler("clicked")}
+                      // onMouseOut={() => cursorChangeHandler("hovered")}
+                      aria-disabled="true"
                     >
                       <button
                         type="button"
                         class="btn btn-primary btn-sm mt-4" // position-absolute bottom-0 start-10 mb-3"
                         style={buttonStyle}
+                        disabled
                       >
                         LIVE
                       </button>
@@ -319,6 +335,10 @@ export default function PortfolioPage() {
                       target="_blank"
                       href="https://github.com/tonyhylo/Baby-Beeznz"
                       rel="noopener noreferrer"
+                      onMouseEnter={() => cursorChangeHandler("hovered")}
+                      onMouseLeave={() => cursorChangeHandler("")}
+                      onClick={() => cursorChangeHandler("clicked")}
+                      onMouseOut={() => cursorChangeHandler("hovered")}
                     >
                       <button
                         type="button"
@@ -329,14 +349,20 @@ export default function PortfolioPage() {
                       </button>
                     </a>
                     <a
-                      target="_blank"
-                      href="https://babybeeznz.herokuapp.com/"
-                      rel="noopener noreferrer"
+                      // target="_blank"
+                      // href="https://babybeeznz.herokuapp.com/"
+                      // rel="noopener noreferrer"
+                      // onMouseEnter={() => cursorChangeHandler("hovered")}
+                      // onMouseLeave={() => cursorChangeHandler("")}
+                      // onClick={() => cursorChangeHandler("clicked")}
+                      // onMouseOut={() => cursorChangeHandler("hovered")}
+                      aria-disabled="true"
                     >
                       <button
                         type="button"
                         class="btn btn-primary btn-sm mt-5" // position-absolute bottom-0 start-10 mb-3"
                         style={buttonStyle}
+                        disabled
                       >
                         LIVE
                       </button>
@@ -361,6 +387,10 @@ export default function PortfolioPage() {
                       target="_blank"
                       href="https://github.com/tonyhylo/Project-Battleship"
                       rel="noopener noreferrer"
+                      onMouseEnter={() => cursorChangeHandler("hovered")}
+                      onMouseLeave={() => cursorChangeHandler("")}
+                      onClick={() => cursorChangeHandler("clicked")}
+                      onMouseOut={() => cursorChangeHandler("hovered")}
                     >
                       <button
                         type="button"
@@ -374,6 +404,10 @@ export default function PortfolioPage() {
                       target="_blank"
                       href="https://tonyhylo.github.io/Project-Battleship/"
                       rel="noopener noreferrer"
+                      onMouseEnter={() => cursorChangeHandler("hovered")}
+                      onMouseLeave={() => cursorChangeHandler("")}
+                      onClick={() => cursorChangeHandler("clicked")}
+                      onMouseOut={() => cursorChangeHandler("hovered")}
                     >
                       <button
                         type="button"
@@ -392,12 +426,8 @@ export default function PortfolioPage() {
         <div id="contact"></div>
       </main>
       <div class="hidden-footer">
-            <h1 className="contact-heading">Contact</h1>
-        <form
-          id="contact-form"
-          className="mx-5"
-          onSubmit={handleSubmit}
-        >
+        <h1 className="contact-heading">Contact</h1>
+        <form id="contact-form" className="mx-5" onSubmit={handleSubmit}>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">
               <svg
@@ -474,8 +504,16 @@ export default function PortfolioPage() {
               onMouseOut={() => cursorChangeHandler("hovered")}
             ></textarea>
             <p></p>
-            <button type="submit" class="btn btn-primary">
-              Submit
+            <button
+              type="submit"
+              class="btn btn-primary fs-5"
+              style={buttonStyle}
+              onMouseEnter={() => cursorChangeHandler("hovered")}
+              onMouseLeave={() => cursorChangeHandler("")}
+              onClick={() => cursorChangeHandler("clicked")}
+              onMouseOut={() => cursorChangeHandler("hovered")}
+            >
+              SEND MESSAGE
             </button>
             <div>{messageResult}</div>
           </div>
@@ -486,6 +524,10 @@ export default function PortfolioPage() {
               href="https://www.linkedin.com/in/tonyhongyaulo/"
               target="_blank"
               rel="noopener noreferrer"
+              onMouseEnter={() => cursorChangeHandler("hovered")}
+              onMouseLeave={() => cursorChangeHandler("")}
+              onClick={() => cursorChangeHandler("clicked")}
+              onMouseOut={() => cursorChangeHandler("hovered")}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -502,6 +544,10 @@ export default function PortfolioPage() {
               target="_blank"
               href="https://github.com/tonyhylo"
               rel="noopener noreferrer"
+              onMouseEnter={() => cursorChangeHandler("hovered")}
+              onMouseLeave={() => cursorChangeHandler("")}
+              onClick={() => cursorChangeHandler("clicked")}
+              onMouseOut={() => cursorChangeHandler("hovered")}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

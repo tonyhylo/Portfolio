@@ -282,11 +282,6 @@ main {
   margin: 15% 0 15% 0;
 }
 
-.btn {
-  --btn-bg: black;
-  --btn-color: black;
-}
-
 .card:hover {
   /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
   box-shadow: 5px 5px 10px black;
@@ -307,6 +302,41 @@ main {
 .portfolio-body {
   margin: 4% 0 12% 0;
 }
+
+@keyframes btnWiggle {
+  0% {-webkit-transform: rotate(0deg);}
+	2% {-webkit-transform: rotate(-5deg);}
+	3.5% {-webkit-transform: rotate(5deg);}
+	5% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg);}
+}
+
+#btn-get-in-touch {
+  animation: btnWiggle 8s infinite;
+}
+
+.btn.btn-primary[disabled] {
+  background-color: rgba(108,150,157,0.5);
+  border: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
   * {
