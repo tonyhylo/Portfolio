@@ -327,7 +327,7 @@ export default function PortfolioPage() {
                   <div class="card-body">
                     <h5 class="card-title">Baby Beeznz</h5>
                     <p class="card-text">
-                      Baby Beeznz is a database designed for parents to keep
+                      Baby Beeznz is a database designed for new parents to keep
                       track of their new baby. The application allows users to
                       log feedings and dirty diapers.
                     </p>

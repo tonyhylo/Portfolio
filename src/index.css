@@ -343,18 +343,18 @@ main {
     cursor: default;
   }
   main {
-    margin-bottom: 69%;
+    margin-bottom: 140%;
     width: fit-content;
   }
 
   .tl-footer {
-    background-color: yellow;
     /* padding-top: 5%; */
     margin-top: 5%;
   }
 
   .hidden-footer {
     padding-top: 17%;
+    margin-bottom: 9%;
   }
 }
 
