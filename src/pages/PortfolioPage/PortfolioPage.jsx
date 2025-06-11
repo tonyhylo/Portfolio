@@ -568,7 +568,7 @@ export default function PortfolioPage() {
                 Designed & developed by Tony Lo using HTML, CSS, JavaScript, and
                 React. Hosted on Firebase.
               </p>
-              <p>&copy; 2023 Tony Lo. All rights reserved.</p>
+              <p>&copy; 2025 Tony Lo. All rights reserved.</p>
             </div>
           </div>
         </footer>

@@ -7,7 +7,6 @@ import Cursor from "../../components/Cursor/Cursor.jsx";
 import { MouseContext } from "../../context/mouse-context";
 
 export default function App() {
-  const { cursorType, cursorChangeHandler } = useContext(MouseContext);
   return (
     <main className="App">
       <Cursor />

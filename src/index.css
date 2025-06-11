@@ -213,7 +213,7 @@ main {
   background-color: white;
   position: fixed;
   /* bottom: 43%; */
-  bottom: 55%;
+  bottom: 56.5%;
   width: 100%;
   height: 200px;
 }
@@ -353,8 +353,8 @@ main {
   }
 
   .hidden-footer {
-    padding-top: 17%;
-    margin-bottom: 9%;
+    padding-top: 30%;
+    margin-bottom: 0%;
   }
 }
 
