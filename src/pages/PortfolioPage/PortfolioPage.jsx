@@ -20,6 +20,7 @@ export default function PortfolioPage() {
     "--bs-btn-hover-bg": "white",
     "--bs-btn-hover-color": "#6C969D",
     "--bs-btn-hover-border-color": "#6C969D",
+    "cursor": "none"
   };
 
   const btnGetInTouch = {
@@ -241,7 +242,7 @@ export default function PortfolioPage() {
                         type="button"
                         class="btn btn-primary btn-sm me-2"
                         style={buttonStyle}
-                        // disabled
+                        disabled
                       >
                         CODE
                       </button>

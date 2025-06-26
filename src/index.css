@@ -201,6 +201,7 @@ hr {
 
 main {
   z-index: 1;
+  /* position: absolute; */
   /* margin-bottom: 40%; */
   margin-bottom: 50%;
   /* background-color: black; */
@@ -309,6 +310,10 @@ main {
 	3.5% {-webkit-transform: rotate(5deg);}
 	5% {-webkit-transform: rotate(0deg);}
 	100% {-webkit-transform: rotate(0deg);}
+}
+
+.btn {
+  cursor: none;
 }
 
 #btn-get-in-touch {

@@ -9,9 +9,9 @@ export default function NavBar() {
         <a
           class="navbar-brand"
           href="#top"
-          onMouseEnter={() => cursorChangeHandler("hovered")}
-          onMouseLeave={() => cursorChangeHandler("")}
-          onClick={() => cursorChangeHandler("clicked")}
+          // onMouseEnter={() => cursorChangeHandler("hovered")}
+          // onMouseLeave={() => cursorChangeHandler("")}
+          // onClick={() => cursorChangeHandler("clicked")}
         >
           Tony Lo
         </a>
@@ -29,10 +29,10 @@ export default function NavBar() {
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div
             class="navbar-nav nav-fill ms-auto"
-            onMouseEnter={() => cursorChangeHandler("hovered")}
-            onMouseLeave={() => cursorChangeHandler("")}
+            // onMouseEnter={() => cursorChangeHandler("hovered")}
+            // onMouseLeave={() => cursorChangeHandler("")}
             onClick={() => cursorChangeHandler("clicked")}
-            onMouseOut={() => cursorChangeHandler("hovered")}
+            // onMouseOut={() => cursorChangeHandler("hovered")}
           >
             <a class="nav-link mx-3" href="#about">
               About
