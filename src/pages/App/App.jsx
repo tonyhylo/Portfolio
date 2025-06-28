@@ -5,6 +5,7 @@ import PortfolioPage from "../PortfolioPage/PortfolioPage";
 import NavBar from "../../components/NavBar/NavBar";
 import Cursor from "../../components/Cursor/Cursor.jsx";
 import { MouseContext } from "../../context/mouse-context";
+import "../../fonts/Myfont-Regular.ttf";
 
 export default function App() {
   return (

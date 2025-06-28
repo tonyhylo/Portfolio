@@ -151,9 +151,15 @@ button[type="submit"] {
   margin: 1vmin 0 0;
 } */
 
+@font-face {
+  font-family: "Light";   /*Can be any text*/
+  src: local("Myfont-Regular"), url("./fonts/Myfont-Regular.ttf") format("truetype");
+}
+
 * {
   cursor: none;
-  font-family: Helvetica, Arial, sans-serif;
+  /* font-family: Helvetica, Arial, sans-serif; */
+  font-family: Light;
 }
 
 main,
