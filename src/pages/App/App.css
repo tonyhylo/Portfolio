@@ -3,6 +3,6 @@
 }
 
 @font-face {
-  font-family: "Light";   /*Can be any text*/
+  font-family: "Regular";   /*Can be any text*/
   src: local("Myfont-Regular"), url("../../fonts/Myfont-Regular.ttf")
 }

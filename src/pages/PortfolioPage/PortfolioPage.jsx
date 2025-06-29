@@ -1,36 +1,31 @@
-// import './MenuList.css';
-// import MenuListItem from '../MenuListItem/MenuListItem';
 import "./PortfolioPage.css";
 import { useState, useEffect, useContext } from "react";
-import { MouseContext } from "../../context/mouse-context";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 
 export default function PortfolioPage() {
-  const { cursorType, cursorChangeHandler } = useContext(MouseContext);
   const [messageResult, setMessageResult] = useState("");
 
-  const buttonStyle = {
-    "--bs-btn-padding-y": ".25rem",
-    "--bs-btn-padding-x": ".5rem",
-    "--bs-btn-font-size": ".75rem",
-    "--bs-btn-bg": "#6C969D",
-    "--bs-btn-border-color": "transparent",
-    "--bs-btn-color": "white",
-    "--bs-btn-hover-bg": "white",
-    "--bs-btn-hover-color": "#6C969D",
-    "--bs-btn-hover-border-color": "#6C969D",
-    "cursor": "none"
-  };
+  // const buttonStyle = {
+  //   "--bs-btn-padding-y": ".25rem",
+  //   "--bs-btn-padding-x": ".5rem",
+  //   "--bs-btn-font-size": ".75rem",
+  //   "--bs-btn-bg": "#6C969D",
+  //   "--bs-btn-border-color": "transparent",
+  //   "--bs-btn-color": "white",
+  //   "--bs-btn-hover-bg": "white",
+  //   "--bs-btn-hover-color": "#6C969D",
+  //   "--bs-btn-hover-border-color": "#6C969D"
+  // };
 
-  const btnGetInTouch = {
-    "--bs-btn-bg": "#6C969D",
-    "--bs-btn-border-color": "transparent",
-    "--bs-btn-color": "white",
-    "--bs-btn-hover-bg": "white",
-    "--bs-btn-hover-color": "#6C969D",
-    "--bs-btn-hover-border-color": "#6C969D",
-  };
+  // const btnGetInTouch = {
+  //   "--bs-btn-bg": "#6C969D",
+  //   "--bs-btn-border-color": "transparent",
+  //   "--bs-btn-color": "white",
+  //   "--bs-btn-hover-bg": "white",
+  //   "--bs-btn-hover-color": "#6C969D",
+  //   "--bs-btn-hover-border-color": "#6C969D",
+  // };
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -126,12 +121,7 @@ export default function PortfolioPage() {
               className="btn btn-primary"
               href="#contact"
               role="link"
-              style={btnGetInTouch}
               id="btn-get-in-touch"
-              onMouseEnter={() => cursorChangeHandler("hovered")}
-              onMouseLeave={() => cursorChangeHandler("")}
-              onClick={() => cursorChangeHandler("clicked")}
-              onMouseOut={() => cursorChangeHandler("hovered")}
             >
               Get In Touch!
             </a>
@@ -233,15 +223,10 @@ export default function PortfolioPage() {
                       target="_blank"
                       href="https://github.com/tonyhylo/PlanMyPath"
                       rel="noopener noreferrer"
-                      onMouseEnter={() => cursorChangeHandler("hovered")}
-                      onMouseLeave={() => cursorChangeHandler("")}
-                      onClick={() => cursorChangeHandler("clicked")}
-                      onMouseOut={() => cursorChangeHandler("hovered")}
                     >
                       <button
                         type="button"
                         class="btn btn-primary btn-sm me-2"
-                        style={buttonStyle}
                         disabled
                       >
                         CODE
@@ -260,7 +245,6 @@ export default function PortfolioPage() {
                       <button
                         type="button"
                         class="btn btn-primary btn-sm"
-                        style={buttonStyle}
                         disabled
                       >
                         LIVE
@@ -287,15 +271,10 @@ export default function PortfolioPage() {
                       target="_blank"
                       href="https://github.com/tonyhylo/PlanMyPath"
                       rel="noopener noreferrer"
-                      onMouseEnter={() => cursorChangeHandler("hovered")}
-                      onMouseLeave={() => cursorChangeHandler("")}
-                      onClick={() => cursorChangeHandler("clicked")}
-                      onMouseOut={() => cursorChangeHandler("hovered")}
                     >
                       <button
                         type="button"
                         class="btn btn-primary btn-sm mt-4 me-2" // position-absolute bottom-0 start-10 mb-3"
-                        style={buttonStyle}
                       >
                         CODE
                       </button>
@@ -313,7 +292,6 @@ export default function PortfolioPage() {
                       <button
                         type="button"
                         class="btn btn-primary btn-sm mt-4" // position-absolute bottom-0 start-10 mb-3"
-                        style={buttonStyle}
                         disabled
                       >
                         LIVE
@@ -336,15 +314,10 @@ export default function PortfolioPage() {
                       target="_blank"
                       href="https://github.com/tonyhylo/Baby-Beeznz"
                       rel="noopener noreferrer"
-                      onMouseEnter={() => cursorChangeHandler("hovered")}
-                      onMouseLeave={() => cursorChangeHandler("")}
-                      onClick={() => cursorChangeHandler("clicked")}
-                      onMouseOut={() => cursorChangeHandler("hovered")}
                     >
                       <button
                         type="button"
                         class="btn btn-primary btn-sm mt-5 me-2" // position-absolute bottom-0 start-10 mb-3"
-                        style={buttonStyle}
                       >
                         CODE
                       </button>
@@ -362,7 +335,6 @@ export default function PortfolioPage() {
                       <button
                         type="button"
                         class="btn btn-primary btn-sm mt-5" // position-absolute bottom-0 start-10 mb-3"
-                        style={buttonStyle}
                         disabled
                       >
                         LIVE
@@ -388,15 +360,10 @@ export default function PortfolioPage() {
                       target="_blank"
                       href="https://github.com/tonyhylo/Project-Battleship"
                       rel="noopener noreferrer"
-                      onMouseEnter={() => cursorChangeHandler("hovered")}
-                      onMouseLeave={() => cursorChangeHandler("")}
-                      onClick={() => cursorChangeHandler("clicked")}
-                      onMouseOut={() => cursorChangeHandler("hovered")}
                     >
                       <button
                         type="button"
                         class="btn btn-primary btn-sm me-2" // position-absolute bottom-0 start-10 mb-3"
-                        style={buttonStyle}
                       >
                         CODE
                       </button>
@@ -405,15 +372,10 @@ export default function PortfolioPage() {
                       target="_blank"
                       href="https://tonyhylo.github.io/Project-Battleship/"
                       rel="noopener noreferrer"
-                      onMouseEnter={() => cursorChangeHandler("hovered")}
-                      onMouseLeave={() => cursorChangeHandler("")}
-                      onClick={() => cursorChangeHandler("clicked")}
-                      onMouseOut={() => cursorChangeHandler("hovered")}
                     >
                       <button
                         type="button"
                         class="btn btn-primary btn-sm" // position-absolute bottom-0 start-10 mb-3"
-                        style={buttonStyle}
                       >
                         LIVE
                       </button>
@@ -449,10 +411,6 @@ export default function PortfolioPage() {
               id="exampleFormControlInput1"
               name="from-name"
               placeholder="Your name"
-              onMouseEnter={() => cursorChangeHandler("hovered")}
-              onMouseLeave={() => cursorChangeHandler("")}
-              onClick={() => cursorChangeHandler("clicked")}
-              onMouseOut={() => cursorChangeHandler("hovered")}
             ></input>
             <label for="exampleFormControlInput1" class="form-label">
               <svg
@@ -473,10 +431,6 @@ export default function PortfolioPage() {
               id="exampleFormControlInput1"
               placeholder="email@example.com"
               name="from-email"
-              onMouseEnter={() => cursorChangeHandler("hovered")}
-              onMouseLeave={() => cursorChangeHandler("")}
-              onClick={() => cursorChangeHandler("clicked")}
-              onMouseOut={() => cursorChangeHandler("hovered")}
             ></input>
           </div>
           <div class="mb-3">
@@ -499,20 +453,11 @@ export default function PortfolioPage() {
               placeholder="Hi Tony ..."
               name="from-message"
               rows="3"
-              onMouseEnter={() => cursorChangeHandler("hovered")}
-              onMouseLeave={() => cursorChangeHandler("")}
-              onClick={() => cursorChangeHandler("clicked")}
-              onMouseOut={() => cursorChangeHandler("hovered")}
             ></textarea>
             <p></p>
             <button
               type="submit"
               class="btn btn-primary fs-5"
-              style={buttonStyle}
-              onMouseEnter={() => cursorChangeHandler("hovered")}
-              onMouseLeave={() => cursorChangeHandler("")}
-              onClick={() => cursorChangeHandler("clicked")}
-              onMouseOut={() => cursorChangeHandler("hovered")}
             >
               SEND MESSAGE
             </button>
@@ -525,10 +470,6 @@ export default function PortfolioPage() {
               href="https://www.linkedin.com/in/tonyhongyaulo/"
               target="_blank"
               rel="noopener noreferrer"
-              onMouseEnter={() => cursorChangeHandler("hovered")}
-              onMouseLeave={() => cursorChangeHandler("")}
-              onClick={() => cursorChangeHandler("clicked")}
-              onMouseOut={() => cursorChangeHandler("hovered")}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -545,10 +486,6 @@ export default function PortfolioPage() {
               target="_blank"
               href="https://github.com/tonyhylo"
               rel="noopener noreferrer"
-              onMouseEnter={() => cursorChangeHandler("hovered")}
-              onMouseLeave={() => cursorChangeHandler("")}
-              onClick={() => cursorChangeHandler("clicked")}
-              onMouseOut={() => cursorChangeHandler("hovered")}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
