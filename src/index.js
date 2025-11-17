@@ -1,21 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router } from 'react-router-dom';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router } from "react-router-dom";
+import "./index.css";
 // import 'bootstrap/dist/css/bootstrap.css';
-import "bootstrap/dist/css/bootstrap.min.css"; 
-import "bootstrap/dist/js/bootstrap.bundle.min.js"; 
-import App from './pages/App/App';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import App from "./pages/App/App";
 // import reportWebVitals from "./reportWebVitals";
-import MouseContextProvider from './context/mouse-context';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
-      <MouseContextProvider>
-        <App />
-      </MouseContextProvider>
+      <App />
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

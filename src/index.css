@@ -152,7 +152,7 @@ button[type="submit"] {
 } */
 
 @font-face {
-  font-family: "Regular";   /*Can be any text*/
+  font-family: "Regular";  
   src: local("Myfont-Regular"), url("./fonts/Myfont-Regular.ttf") format("truetype");
 }
 
@@ -161,12 +161,15 @@ button[type="submit"] {
   font-family: Regular;
 }
 
+.name-title {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 main,
 #about,
 #portfolio,
 #resume,
-#contact,
-#experience {
+#contact {
   padding-top: 5%;
 }
 

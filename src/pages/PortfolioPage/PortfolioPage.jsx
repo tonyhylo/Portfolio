@@ -2,30 +2,10 @@ import "./PortfolioPage.css";
 import { useState, useEffect, useContext } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
-
+import RotatingText from "../../components/RotatingText/RotatingText";
+import ScrollStack, { ScrollStackItem } from "../../components/ScrollStack/ScrollStack";
 export default function PortfolioPage() {
   const [messageResult, setMessageResult] = useState("");
-
-  // const buttonStyle = {
-  //   "--bs-btn-padding-y": ".25rem",
-  //   "--bs-btn-padding-x": ".5rem",
-  //   "--bs-btn-font-size": ".75rem",
-  //   "--bs-btn-bg": "#6C969D",
-  //   "--bs-btn-border-color": "transparent",
-  //   "--bs-btn-color": "white",
-  //   "--bs-btn-hover-bg": "white",
-  //   "--bs-btn-hover-color": "#6C969D",
-  //   "--bs-btn-hover-border-color": "#6C969D"
-  // };
-
-  // const btnGetInTouch = {
-  //   "--bs-btn-bg": "#6C969D",
-  //   "--bs-btn-border-color": "transparent",
-  //   "--bs-btn-color": "white",
-  //   "--bs-btn-hover-bg": "white",
-  //   "--bs-btn-hover-color": "#6C969D",
-  //   "--bs-btn-hover-border-color": "#6C969D",
-  // };
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -39,7 +19,9 @@ export default function PortfolioPage() {
       .then(
         (result) => {
           console.log(result.text);
-          setMessageResult("Message sent.");
+          setMessageResult(
+            "Thank you for your message, I will reply within 24 hours."
+          );
         },
         (error) => {
           console.log(error.text);
@@ -54,7 +36,20 @@ export default function PortfolioPage() {
         <section className="section-landing-page">
           <h1 className="name-title">
             <strong>Tony Lo</strong>
+            <RotatingText
+              texts={["CREATIVE", "PRACTICAL", "RESOURCEFUL"]}
+              mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+              staggerFrom={"last"}
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "-120%" }}
+              staggerDuration={0.025}
+              splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+              transition={{ type: "spring", damping: 30, stiffness: 400 }}
+              rotationInterval={2000}
+            />
           </h1>
+
           <h4 className="sub-title">
             ROBOTICS | SOFTWARE DEVELOPMENT | WEB DEVELOPER
           </h4>
@@ -93,7 +88,7 @@ export default function PortfolioPage() {
             Github
           </a>
         </div> */}
-        <section id="about" className="">
+         <section id="about" className="">
           <h1 className="headings">About</h1>
           <div className="about-text fs-5">
             <p>
@@ -125,78 +120,6 @@ export default function PortfolioPage() {
             >
               Get In Touch!
             </a>
-          </div>
-        </section>
-        <section id="experience">
-          <h1 className="headings">Experience</h1>
-          <div className="experience-body">
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-              <div class="col">
-                <div class="card h-100">
-                  {/* <img src="..." class="card-img-top" alt="..."></img>   */}
-                  <div class="card-body">
-                    <h5 class="card-title">Epson Canada</h5>
-                    <h6 class="card-subtitle">2021 - Present</h6>
-                    <p class="card-text">
-                      As a Systems Designer, I help drive business decisions in
-                      productizing industry turnkey products. I provide hands on
-                      experience in developing industrial automation
-                      applications, overseeing all system aspects including
-                      electrical, mechanical, and software. I work with
-                      shareholders and customers in collaboration to perfect the
-                      quality of my work.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  {/* <img src="..." class="card-img-top" alt="..."></img> */}
-                  <div class="card-body">
-                    <h5 class="card-title">Freelance Developer</h5>
-                    <h6 class="card-subtitle">2023 - Present</h6>
-                    <p class="card-text">
-                      I work with small businesses and independent owners to
-                      bring their needs onto the online platform. From domain
-                      registration to deployment, I cover all the bases. My
-                      specialties are SPA in React, and my experience includes
-                      WordPress and Wix.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* <div class="col">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Slacan Industries</h5>
-                  <h6 class="card-subtitle">2019 - 2021</h6>
-                  <p class="card-text">
-                    As an Automation Systems Engineer, I identified processes
-                    for robotic automation. I then selected hardware/software,
-                    designed the automation cell, and integrated all aspects
-                    including electrical, mechanical, and software requirements.
-                    I have successfully commissioned cells with budgets up to
-                    $1M.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Slacan Industries</h5>
-                  <h6 class="card-subtitle">2017 - 2019</h6>
-                  <p class="card-text">
-                    As a Junior Mechanical Engineer, I used FMEA to identify
-                    root cause to manufacturing process failures, and design
-                    failures. I used SolidWorks and AutoCAD to verify product
-                    assemblies, and new product designs. I commissioned a
-                    robotic vision system to provide first off quality checks.
-                  </p>
-                </div>
-              </div>
-            </div> */}
-            </div>
           </div>
         </section>
         <section id="portfolio">
@@ -455,10 +378,7 @@ export default function PortfolioPage() {
               rows="3"
             ></textarea>
             <p></p>
-            <button
-              type="submit"
-              class="btn btn-primary fs-5"
-            >
+            <button type="submit" class="btn btn-primary fs-5">
               SEND MESSAGE
             </button>
             <div>{messageResult}</div>
